@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+tasks.txt
+scores.txt
+tasks.json
+scores.json

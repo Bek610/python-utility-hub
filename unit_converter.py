@@ -8,14 +8,22 @@ while True:
  print("5. Exit")
 
 
- choice = int(input("Enter your choice: "))
+ choice = input("Enter your choice: ")
+ if not choice.isdigit():
+     print("Invalid choice! please enter a number")
+     continue
+ choice = int(choice)
  if choice == 1:
      print(" You chose temperature!")
      print("1. Celsius → Fahrenheit ")
      print("2. Fahrenheit → Celsius ")
      print("3. Celsius → Kelvin  ")
      print("4. Kelvin → Celsius ")
-     temp_choice = int(input("Enter your choice: "))
+     temp_choice = input("Enter your choice: ")
+     if not temp_choice.isdigit():
+         print("Invalid choice! please enter a number")
+         continue
+     temp_choice = int(temp_choice)
      if temp_choice == 1:
          celsius = float(input("Enter your temperature in Celsius: "))
          fahrenheit= (celsius * 9/5) + 32
@@ -40,7 +48,12 @@ while True:
      print("2. Miles → Kilometers ")
      print("3. Meters → Feet")
      print("4. Feet → Meters")
-     dist_choice = int(input("Enter your choice: "))
+     dist_choice = input("Enter your choice: ")
+     if not dist_choice.isdigit():
+         print("Invalid choice! please enter a number")
+         continue
+     dist_choice = int(dist_choice)
+
      if dist_choice == 1:
          kilometers = float(input("Enter your distance in Kilometers: "))
          miles = kilometers / 1.609344
@@ -65,7 +78,11 @@ while True:
      print("2. Pounds → Kilograms ")
      print("3. Grams → Kilograms ")
      print("4. Kilograms → Grams ")
-     weight_choice = int(input("Enter your choice: "))
+     weight_choice = input("Enter your choice: ")
+     if not weight_choice.isdigit():
+         print("Invalid choice! please enter a number")
+         continue
+     weight_choice = int(weight_choice)
      if weight_choice == 1:
          kg=float(input("Enter your weight in Kilograms: "))
          pounds= kg * 2.20462262
@@ -91,7 +108,11 @@ while True:
      print("2. Minutes → Hours ")
      print("3. Minutes → Seconds")
      print("4. Seconds → Minutes")
-     time_choice = int(input("Enter your choice: "))
+     time_choice = input("Enter your choice: ")
+     if not time_choice.isdigit():
+         print("Invalid choice! please enter a number")
+         continue
+     time_choice = int(time_choice)
      if time_choice == 1:
          hours = float(input("Enter your time in Hours: "))
          minutes = hours * 60

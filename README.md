@@ -1,47 +1,52 @@
-# Python Utility Hub
+# Python Group Project
 
-A console program that combines three Python mini-projects in one menu:
+This is our group project for COP 1500 (Introduction to Computer Science) at FGCU.
+We made 6 small Python programs, 3 each.
 
-1. **Simple Calculator** – add, subtract, multiply, divide, power, remainder, square root, with history
-2. **To-Do List** – add, show, finish, edit, delete and search tasks, show them by priority, statistics; tasks are saved to `tasks.txt`
-3. **Number Guessing Game** – three levels, higher/lower and hot/cold hints, score, best results saved to `scores.txt`
+**Bilguun Shagdarsuren**
+- Simple Calculator
+- To-Do List
+- Number Guessing Game
+
+**Tsogzolmaa Mandalbayar**
+- Unit Converter
+- Password Generator
+- Text-based Adventure Game (Escape the Haunted House)
 
 ## How to run
 
-You need Python 3. No extra libraries are needed.
+You just need Python 3, nothing else to install.
+
+Open a terminal in this folder and type the name of the program you want:
 
 ```
 python3 main.py
+python3 unit_converter.py
+python3 password_generator.py
+python3 text_based_adventure_game.py
 ```
 
-(On Windows type `python main.py`.)
+(on Windows use `python` instead of `python3`)
 
-Each program can also be run by itself:
+`main.py` opens a menu with the calculator, the to-do list and the guessing game.
 
-```
-python3 calculator.py
-python3 todo_list.py
-python3 guessing_game.py
-```
+## What each program does
+
+**Calculator** - add, subtract, multiply, divide, power, remainder and square root. It remembers your answers in a history list. If you divide by zero or type letters it shows an error instead of crashing.
+
+**To-Do List** - add tasks with a priority (high, medium, low), mark them done, edit, delete and search them. Tasks are saved in `tasks.txt` so they are still there next time.
+
+**Guessing Game** - the computer picks a random number and you try to guess it. You get "higher" or "lower" hints. There are 3 levels and your best results are saved in `scores.txt`.
+
+**Unit Converter** - converts temperature, distance, weight and time.
+
+**Password Generator** - makes a random password with the length you choose.
+
+**Adventure Game** - you are stuck in a haunted house and you pick doors and paths. Some choices win and some lose.
 
 ## Files
 
-| File | What it does |
-|------|--------------|
-| `main.py` | Main menu, starts the three programs |
-| `helpers.py` | Input functions that keep asking until the input is correct |
-| `calculator.py` | `Calculator` class |
-| `todo_list.py` | `TodoList` class, saves tasks to a text file |
-| `guessing_game.py` | `GuessingGame` class, saves best results to a text file |
-
-## Python topics used
-
-- Loops: `while True` menus, `for` loops, `break`, `continue`
-- Data types: `int`, `float`, `str`, `bool`
-- Lists, tuples and dictionaries
-- Functions with parameters and return values
-- Exceptions: `try` / `except`, `raise`, `ValueError`, `ZeroDivisionError`, `IndexError`, `FileNotFoundError`
-- Classes and objects: `__init__`, `self`, methods
-- Reading and writing text files
-
-Built-in modules used: `math`, `random`.
+- `main.py` - main menu (start here)
+- `helpers.py` - small functions for checking user input
+- `calculator.py`, `todo_list.py`, `guessing_game.py` - Bilguun's programs
+- `unit_converter.py`, `password_generator.py`, `text_based_adventure_game.py` - Tsogzolmaa's programs

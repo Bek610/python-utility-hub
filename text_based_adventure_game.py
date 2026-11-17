@@ -1,4 +1,3 @@
-
 while True:
     print("=" * 40)
     print("     Escape the Haunted House!!!")
